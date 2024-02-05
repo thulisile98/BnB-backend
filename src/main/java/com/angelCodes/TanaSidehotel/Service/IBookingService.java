@@ -1,15 +1,19 @@
 package com.angelCodes.TanaSidehotel.Service;
 
+import com.angelCodes.TanaSidehotel.Model.BookedRoom;
+
+import java.util.List;
+
 public interface IBookingService {
-    void cancelBooking(Long bookingId);
+//    void cancelBooking(Long bookingId);
 
     List<BookedRoom> getAllBookingsByRoomId(Long roomId);
 
-    String saveBooking(Long roomId, BookedRoom bookingRequest);
-
-    BookedRoom findByBookingConfirmationCode(String confirmationCode);
+//    String saveBooking(Long roomId, BookedRoom bookingRequest);
+//
+//    BookedRoom findByBookingConfirmationCode(String confirmationCode);
 
     List<BookedRoom> getAllBookings();
-
-    List<BookedRoom> getBookingsByUserEmail(String email);
+//
+//    List<BookedRoom> getBookingsByUserEmail(String email);
 }

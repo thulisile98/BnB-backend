@@ -53,7 +53,7 @@ public class RoomServiceImpl implements IRoomService{
 
     @Override
     public byte[] getRoomPhotoByRoomId(Long roomId) throws SQLException {
-        Optional<Room> theRoom = roomRepository.findById(roomId)
+        Optional<Room> theRoom = roomRepository.findById(roomId);
                 if(theRoom.isEmpty()){
                     throw new ResourceNotFoundException("Sorry Room not found");
                 }

@@ -26,7 +26,7 @@ public class Security{
         @Override
         protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
                 throws ServletException, IOException {
-            response.setHeader("Access-Control-Allow-Origin", "http://localhost:5174");
+            response.setHeader("Access-Control-Allow-Origin", "http://localhost:5173");
             response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
             response.setHeader("Access-Control-Allow-Headers", "Origin, Content-Type, Accept, Authorization");
             response.setHeader("Access-Control-Allow-Credentials", "true");
